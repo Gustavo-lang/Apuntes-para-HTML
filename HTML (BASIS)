@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes HTML</title>
+    <style>
+        .cuadro {
+            border: 1px solid #ccc; /* Borde */
+            padding: 15px; /* Espaciado interno */
+            margin: 20px 0; /* Margen superior e inferior */
+            background-color: #f9f9f9; /* Color de fondo */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        .codigo {
+            border: 1px solid #aaa; /* Borde del cuadro de código */
+            background-color: #eef; /* Color de fondo del cuadro de código */
+            padding: 10px; /* Espaciado interno del cuadro de código */
+            font-family: monospace; /* Fuente monoespaciada */
+            overflow: auto; /* Para que el contenido excedente se pueda desplazar */
+            margin-top: 10px; /* Margen superior del cuadro de código */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Apuntes HTML</h1>
+
+    <div class="cuadro">
+        <h2>Elementos básicos de HTML</h2>
+        <h3>Estructura de la web</h3>
+        <p>En un archivo HTML encontraremos 3 segmentos importantes: la etiqueta HTML que abarca toda la página, y dentro de ella están el <strong>head</strong> y el <strong>body</strong>. En <strong>head</strong> podemos definir metadatos, mientras que en <strong>body</strong> escribiremos todo lo que se verá en ella.</p>
+        <div class="codigo">
+            <pre>&lt;html&gt;
+    &lt;head&gt;...&lt;/head&gt;
+    &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+    </div>
+
+    <div class="cuadro">
+        <h3>Body</h3>
+        <h4>Encabezado, párrafos y formato</h4>
+        <p>Para poner encabezados usamos la etiqueta H seguida de un número, como h1, h2; entre mayor sea el número, menor será el tamaño del texto.</p>
+        <p>Para hacer párrafos utilizamos la etiqueta <strong>p</strong>.</p>
+        <p>Si queremos dar un inciso entre párrafos, al final de cada etiqueta pondremos un <strong>br</strong>.</p>
+        <p>Para dar formato: <b>Negrita</b> con <strong>b</strong>, <i>Cursiva</i> con <strong>i</strong>, y <u>subrayado</u> con <strong>u</strong>.</p>
+        <div class="codigo">
+            <pre>&lt;h1&gt;Encabezado&lt;/h1&gt;
+&lt;p&gt;Este es un párrafo.&lt;/p&gt;
+&lt;br&gt;</pre>
+        </div>
+    </div>
+
+    <div class="cuadro">
+        <h3>Hipervínculos</h3>
+        <p>Para crear enlaces que redirijan a otras páginas usaremos la etiqueta <strong>a</strong>.</p>
+        <a href="https://www.youtube.com">Youtube</a>
+        <div class="codigo">
+            <pre>&lt;a href=&quot;https://www.youtube.com&quot;&gt;Youtube&lt;/a&gt;</pre>
+        </div>
+    </div>
+
+    <div class="cuadro">
+        <h3>Imágenes</h3>
+        <p>Para colocar imágenes en nuestra web, solo utilizaremos la etiqueta <strong>img</strong>.</p>
+        <img src="" alt="">
+        <div class="codigo">
+            <pre>&lt;img src=&quot;imagen.jpg&quot; alt=&quot;Descripción de la imagen&quot;&gt;</pre>
+        </div>
+    </div>
+
+    <div class="cuadro">
+        <h3>Capas</h3>
+        <p>Las capas sirven para contener varios elementos de una página web. Estas capas se pueden mover y colocar donde queramos y son útiles a la hora de maquetar una página.</p>
+        <p>Para hacer una capa utilizamos la etiqueta <strong>div</strong>.</p>
+        <div>
+            <h2>Londres</h2>
+            <p>Es la capital de Inglaterra.</p>
+        </div>
+        <div class="codigo">
+            <pre>&lt;div&gt;
+    &lt;h2&gt;Londres&lt;/h2&gt;
+    &lt;p&gt;Es la capital de Inglaterra.&lt;/p&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+    <div class="cuadro">
+        <h3>Tablas y Listas</h3>
+        <h4>Listas</h4>
+        <p>Las listas pueden ser de dos tipos: ordenadas y no ordenadas.</p>
+        <h5>Listas no ordenadas</h5>
+        <p>Para hacer listas no ordenadas, utilizamos las etiquetas <strong>ul</strong> e <strong>li</strong>.</p>
+        <ul>
+            <li>Harina</li>
+            <li>Agua</li>
+            <li>Sal</li>
+            <li>Levadura</li>
+            <li>Aceite</li>
+        </ul>
+        <div class="codigo">
+            <pre>&lt;ul&gt;
+    &lt;li&gt;Harina&lt;/li&gt;
+    &lt;li&gt;Agua&lt;/li&gt;
+    &lt;li&gt;Sal&lt;/li&gt;
+    &lt;li&gt;Levadura&lt;/li&gt;
+    &lt;li&gt;Aceite&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        </div>
+
+        <h5>Listas ordenadas</h5>
+        <p>Las listas ordenadas se hacen con las etiquetas <strong>ol</strong> e <strong>li</strong>.</p>
+        <ol>
+            <li>Mezclar harina, sal y levadura.</li>
+            <li>Mezclar agua, aceite y sal.</li>
+            <li>Mezclar todo y amasar.</li>
+        </ol>
+        <div class="codigo">
+            <pre>&lt;ol&gt;
+    &lt;li&gt;Mezclar harina, sal y levadura.&lt;/li&gt;
+    &lt;li&gt;Mezclar agua, aceite y sal.&lt;/li&gt;
+    &lt;li&gt;Mezclar todo y amasar.&lt;/li&gt;
+&lt;/ol&gt;</pre>
+        </div>
+
+        <h5>Lista no ordenada con enlaces</h5>
+        <ul>
+            <li><a href="https://www.twitch.tv/">Twitch</a></li>
+            <li><a href="https://www.facebook.com/?locale=es_ES">Facebook</a></li>
+            <li><a href="https://discord.com/">Discord</a></li>
+        </ul>
+        <div class="codigo">
+            <pre>&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.twitch.tv/&quot;&gt;Twitch&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/?locale=es_ES&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://discord.com/&quot;&gt;Discord&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        </div>
+    </div>
+
+    <div class="cuadro">
+        <h1>Tablas</h1>
+        <p>Para hacer tablas utilizamos las etiquetas <strong>table</strong>, <strong>tr</strong> y <strong>td</strong>.</p>
+        <p>Con <strong>tr</strong> hacemos filas y con <strong>td</strong> celdas.</p>
+        <table border="1">
+            <tr>
+                <td>Ingredientes</td>
+                <td>Cantidad</td>
+                <td>Precio</td>
+            </tr>
+            <tr>
+                <td>Harina</td>
+                <td>1 Kg</td>
+                <td>1 €</td>
+            </tr>
+            <tr>
+                <td>Agua</td>
+                <td>1 L</td>
+                <td>0.50 €</td>
+            </tr>
+        </table>
+        <div class="codigo">
+            <pre>&lt;table border=&quot;1&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ingredientes&lt;/td&gt;
+        &lt;td&gt;Cantidad&lt;/td&gt;
+        &lt;td&gt;Precio&lt;/
